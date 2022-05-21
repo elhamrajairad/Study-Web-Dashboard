@@ -1,11 +1,10 @@
 :root {
-  --white: #fcfcfc;
-  --primary-color: #014CCF;
-  --light-color: #fffafa;
-  --dark-color: #14141F;
+  --primary-color: #8a70d6;
+  --secondary-color: #e9e3fe;
+  --light-color: #fcfbfc;
+  --dark-color: #434041;
   --gray-color: #7a7a7a;
-  --card-color: #343444;
-
+  --white: #fcfcfc;
 
   /* border-radius */
   --border-radius-xs: 0.5rem;
