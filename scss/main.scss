@@ -5,6 +5,13 @@
 
 .main__dashboard {
   grid-template-columns: 15% 55% 30%;
+  padding: 5rem 0;
+}
+.header__logo {
+  margin-bottom: 2rem;
+}
+.header__logo img {
+  width: 15rem;
 }
 .tablinks {
   width: 100%;
@@ -27,11 +34,16 @@
   color: $primary-color;
   font-weight: 500;
 }
+.main__dashboard__vertical-menu {
+  position: relative;
+}
 .main__dashboard__vertical-menu__subscrib {
   margin-top: 20rem;
   background-color: $secondary-color;
-  padding: 1rem 2rem;
+  padding: 2rem;
   position: relative;
+  position: absolute;
+  bottom: 0;
   border-radius: $border-radius-s;
 }
 .main__dashboard__vertical-menu__subscrib img {
@@ -39,10 +51,15 @@
   position: absolute;
   top: -15rem;
 }
-.main__dashboard__vertical-menu__subscrib p {
+.main__dashboard__vertical-menu__subscrib h4 {
   margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.main__dashboard__vertical-menu__subscrib p {
   font-size: 1.3rem;
   text-align: center;
+  color: $gray-color;
 }
 .main__dashboard__vertical-menu__subscrib .btn {
   text-align: center;

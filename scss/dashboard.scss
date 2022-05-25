@@ -2,6 +2,12 @@
 @import "./colors";
 @import "./reset";
 @import "./utility";
+@mixin opacityColor($color) {
+  background-color: rgba($color: $color, $alpha: 0.2);
+}
+@mixin changeColor($color) {
+  background-color: $color;
+}
 
 .dashboard__header {
   margin-bottom: 2rem;
@@ -47,19 +53,50 @@
 }
 .dashboard__courses__cards {
   grid-template-columns: repeat(3, minmax(20rem, 1fr));
-  gap: 1rem;
+  gap: 3rem;
 }
 .card {
-  background-color: $secondary-color;
   padding: 2rem;
   border-radius: $border-radius-xs;
   overflow: visible;
 }
 .card .card__img__header {
-  background-color: $primary-color;
-  padding: 2rem;
+  padding: 2rem 4rem;
   width: 100%;
   border-radius: $border-radius-xs;
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(1) > img {
+  @include changeColor(#fcab5e);
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(2) > img {
+  @include changeColor(#8a70d6);
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(3) > img {
+  @include changeColor(#579be4);
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(1) {
+  @include opacityColor(#fcab5e);
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(2) {
+  @include opacityColor(#8a70d6);
+}
+#Dashboard > div.dashboard__courses > div > div:nth-child(3) {
+  @include opacityColor(#579be4);
+}
+div:nth-child(1)
+  > div.card__footer.flex.flex-direction-row.justify-content-space-between
+  > div.card__footer__btn {
+  @include changeColor(#fcab5e);
+}
+div:nth-child(2)
+  > div.card__footer.flex.flex-direction-row.justify-content-space-between
+  > div.card__footer__btn {
+  @include changeColor(#8a70d6);
+}
+div:nth-child(2)
+  > div.card__footer.flex.flex-direction-row.justify-content-space-between
+  > div.card__footer__btn {
+  @include changeColor(#579be4);
 }
 .heading {
   font-size: 2.5rem;
