@@ -176,15 +176,36 @@
   color: $gray-color;
   opacity: 0.7;
 }
-.main__dashboard__profile__progress__item{
+.main__dashboard__profile__progress__item {
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 4rem 0.4rem $secondary-color;
   border-radius: $border-radius-xs;
   color: $gray-color;
   transition: $transition;
+  cursor: pointer;
 }
-.main__dashboard__profile__progress__item:hover{
-  background-color: $primary-color;
-  color: $white;
+.main__dashboard__profile__progress__item:hover {
+  background-color: $secondary-color;
+}
+.progress__title {
+  width: 80%;
+}
+p.progress__title__course {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+p.progress__title__count {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+i.ri-arrow-right-s-line {
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+
+.circlechart {
+  float: left;
+  padding: 0;
+  padding-right: 1rem;
 }

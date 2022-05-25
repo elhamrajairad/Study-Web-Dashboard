@@ -18,7 +18,22 @@
     <link rel="stylesheet" href="./css/header.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/dashboard.min.css">
+    <link rel="stylesheet" href="./css/progresscircle.min.css">
     <!-- styles - end -->
+    <!-- script-progress start -->
+    <div class="jquery-script-ads" style="margin:30px auto;">
+        <script type="text/javascript">
+            google_ad_client = "ca-pub-2783044520727903";
+            /* jQuery_demo */
+            google_ad_slot = "2780937993";
+            google_ad_width = 728;
+            google_ad_height = 90;
+
+        </script>
+        <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </div>
+    <!-- script-progress end -->
     <title>Study Web Dashboard</title>
 </head>
 
@@ -264,18 +279,45 @@
 
                                 </div>
                             </div>
-
                         </section>
                     </div>
                     <div class="main__dashboard__profile__progress">
                         <h3 class="heading">Homework Progress</h3>
                         <div
-                            class="main__dashboard__profile__progress__items flex flex-direction-row justify-content-space-between width-100 gap-1">
+                            class="main__dashboard__profile__progress__items flex flex-direction-column justify-content-space-between width-100 gap-1">
                             <div class="main__dashboard__profile__progress__item width-100">
-                                <span class="progress__precent">50%</span>
+                                <span class="progress__precent">
+                                    <div id="demo">
+                                        <div class="circlechart" data-percentage="50"></div>
+                                    </div>
+                                </span>
                                 <span class="progress__title flex-inline flex-direction-column">
                                     <p class="progress__title__course">Styling with CSS</p>
-                                    <p class="progress__title__count">12 course</p>
+                                    <p class="progress__title__count">12 Task</p>
+                                </span>
+                                <i class="ri-arrow-right-s-line"></i>
+                            </div>
+                            <div class="main__dashboard__profile__progress__item width-100">
+                                <span class="progress__precent">
+                                    <div id="demo">
+                                        <div class="circlechart" data-percentage="65"></div>
+                                    </div>
+                                </span>
+                                <span class="progress__title flex-inline flex-direction-column">
+                                    <p class="progress__title__course">Basic of programming</p>
+                                    <p class="progress__title__count">18 Task</p>
+                                </span>
+                                <i class="ri-arrow-right-s-line"></i>
+                            </div>
+                            <div class="main__dashboard__profile__progress__item width-100">
+                                <span class="progress__precent">
+                                    <div id="demo">
+                                        <div class="circlechart" data-percentage="25"></div>
+                                    </div>
+                                </span>
+                                <span class="progress__title flex-inline flex-direction-column">
+                                    <p class="progress__title__course">Learn to program to java</p>
+                                    <p class="progress__title__count">10 Task</p>
                                 </span>
                                 <i class="ri-arrow-right-s-line"></i>
                             </div>
@@ -287,7 +329,27 @@
     </main>
     <script src="./script/calender.js"></script>
     <script src="./script/vertical-tab.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./script/progresscircle.js"></script>
+    <script>
+        $('.circlechart').circlechart(); // Initialization
+    </script>
+    <script type="text/javascript">
 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 </body>
 
 </html>

@@ -4,10 +4,10 @@
 @import "./utility";
 section {
   position: relative;
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50rem;
+  min-height: 30rem;
   overflow: hidden;
 }
 /* section::before
