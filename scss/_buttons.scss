@@ -1,0 +1,22 @@
+@import "./colors";
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: $primary-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $white;
+  outline: none;
+  border: none;
+  border-radius: $border-radius-s;
+  vertical-align: baseline;
+  padding: 1rem 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.2rem $primary-color inset;
+  transition: $transition;
+  color: $primary-color;
+}

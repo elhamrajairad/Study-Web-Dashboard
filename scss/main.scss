@@ -1,0 +1,54 @@
+@import "./buttons";
+@import "./colors";
+@import "./reset";
+@import "./utility";
+
+.main__dashboard {
+  grid-template-columns: 15% 55% 30%;
+}
+.tablinks {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: start;
+  padding: 1rem 2rem;
+  border-radius: $border-radius-s;
+  color: $gray-color;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  transition: $transition;
+}
+.tablinks:hover {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-weight: 500;
+}
+.main__dashboard__vertical-menu__subscrib {
+  margin-top: 20rem;
+  background-color: $secondary-color;
+  padding: 1rem 2rem;
+  position: relative;
+  border-radius: $border-radius-s;
+}
+.main__dashboard__vertical-menu__subscrib img {
+  width: 20rem;
+  position: absolute;
+  top: -15rem;
+}
+.main__dashboard__vertical-menu__subscrib p {
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.main__dashboard__vertical-menu__subscrib .btn {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.active {
+  background-color: $secondary-color;
+}

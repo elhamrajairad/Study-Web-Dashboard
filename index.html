@@ -8,9 +8,17 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <!--icon fonts - start  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--icon fonts - end  -->
     <!-- styles - start -->
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./css/header.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/dashboard.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cal.css">
     <!-- styles - end -->
     <title>Study Web Dashboard</title>
 </head>
@@ -19,10 +27,290 @@
     <header id="header">
         <div class="container">
             <div class="header flex flex-direction-row justify-content-space-between">
-                <div></div>
+                <div class="header__logo">
+                    <img src="./images/logo.png" alt="Logo study web" srcset="">
+                </div>
             </div>
         </div>
     </header>
+    <main id="main__dashboard">
+        <div class="container">
+            <div class="main__dashboard grid gap-3">
+                <div class="main__dashboard__vertical-menu">
+                    <div class="tab  flex flex-direction-column align-items-flex-start gap-1">
+                        <button class="tablinks" onclick="openCity(event, 'Dashboard')" id="defaultOpen">
+                            <i class="ri-dashboard-2-line"></i>
+                            <span>Dashboard</span>
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Course')">
+                            <i class="ri-briefcase-4-line"></i>
+                            <span>Course</span>
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Chat')">
+                            <i class="ri-chat-3-line"></i>
+                            <span>Chat</span>
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Grade')">
+                            <i class="ri-bar-chart-line"></i>
+                            <span>Grade</span>
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'schedule')">
+                            <i class="ri-calendar-2-line"></i>
+                            <span>Schedule</span>
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Setting')">
+                            <i class="ri-settings-4-line"></i>
+                            <span>Setting</span>
+                        </button>
+                    </div>
+                    <div class="main__dashboard__vertical-menu__subscrib">
+                        <img src="./images/monitoring.png" alt="woman">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, mini</p>
+                        <button class="btn">More Detaile</button>
+                    </div>
+                </div>
+                <div
+                    class="main__dashboard__content flex flex-direction-column justify-content-space-between width-100">
+                    <div id="Dashboard" class="tabcontent dashboard width-100">
+                        <div class="dashboard__header flex flex-direction-row justify-content-space-between">
+                            <h2>Dashboard</h2>
+                            <div class="dashboard__search">
+                                <span
+                                    class="dashboard__search__input flex-inline flex-direction-row justify-content-start gap-1">
+                                    <i class="ri-search-line"></i>
+                                    <input type="text" name="search" id="search" placeholder="Search...">
+                                </span>
+                                <span class="dashboard__bell">
+                                    <i class="ri-notification-2-line"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="dashboard__courses">
+                            <h3 class="heading">New Course</h3>
+                            <div class="dashboard__courses__cards grid">
+                                <div class="dashboard__courses__cards card">
+                                    <img src="./images/house.png" alt="house" class="card__img__header">
+                                    <div class="card__body">
+                                        <p>Geography</p>
+                                        <span>12 lessons</p>
+                                    </div>
+                                    <div class="card__footer flex flex-direction-row justify-content-space-between">
+                                        <div class="card__footer__avatar">
+                                            <img src="./images/avatar/man (1).png" alt="man">
+                                            <img src="./images/avatar/woman (1).png" alt="woman">
+                                            <img src="./images/avatar/man (2).png" alt="man">
+                                        </div>
+                                        <div class="card__footer__btn"><i class="ri-arrow-right-s-line"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dashboard__courses__cards card">
+                                    <img src="./images/email.png" alt="email" class="card__img__header">
+                                    <div class="card__body">
+                                        <p>JavaScript Course</p>
+                                        <span>15 lessons</p>
+                                    </div>
+                                    <div class="card__footer flex flex-direction-row justify-content-space-between">
+                                        <div class="card__footer__avatar">
+                                            <img src="./images/avatar/man (1).png" alt="man">
+                                            <img src="./images/avatar/woman (1).png" alt="woman">
+                                            <img src="./images/avatar/man (2).png" alt="man">
+                                        </div>
+                                        <div class="card__footer__btn"><i class="ri-arrow-right-s-line"></i></div>
+                                    </div>
+                                </div>
+                                <div class="dashboard__courses__cards card">
+                                    <img src="./images/camera.png" alt="camera" class="card__img__header">
+                                    <div class="card__body">
+                                        <p>Photography Course</p>
+                                        <span>8 lessons</p>
+                                    </div>
+                                    <div class="card__footer flex flex-direction-row justify-content-space-between">
+                                        <div class="card__footer__avatar">
+                                            <img src="./images/avatar/man (1).png" alt="man">
+                                            <img src="./images/avatar/woman (1).png" alt="woman">
+                                            <img src="./images/avatar/man (2).png" alt="man">
+                                        </div>
+                                        <div class="card__footer__btn"><i class="ri-arrow-right-s-line"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard__mycourses">
+                            <div
+                                class="dashboard__mycourses__heading flex flex-direction-row justify-content-space-between">
+                                <h3 class="heading">My Courses</h3>
+                                <span>View all</span>
+                            </div>
+                            <div class="dashboard__mycourses__lists">
+                                <table class="dashboard__mycourses__list width-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Course Name</th>
+                                            <th>Start</th>
+                                            <th>Rate</th>
+                                            <th>level</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                                class="flex-inline flex-direction-row justify-content-start gap-1 course__name">
+                                                <i class="ri-command-line"></i>
+                                                <div class="flex-inline flex-direction-column">
+                                                    <span class="course__name__title">Web Design</span>
+                                                    <span class="course__name__count">12 course</span>
+                                                </div>
+                                            </td>
+                                            <td>May 12</td>
+                                            <td>4.8</td>
+                                            <td>Elementray</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="flex-inline flex-direction-row justify-content-start gap-1 course__name">
+                                                <i class="ri-code-s-slash-line"></i>
+                                                <div class="flex-inline flex-direction-column">
+                                                    <span class="course__name__title">Development Basic</span>
+                                                    <span class="course__name__count">8 course</span>
+                                                </div>
+                                            </td>
+                                            <td>May 18</td>
+                                            <td>4.4</td>
+                                            <td>Elementray</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="flex-inline flex-direction-row justify-content-start gap-1 course__name">
+                                                <i class="fa-brands fa-python"></i>
+                                                <div class="flex-inline flex-direction-column">
+                                                    <span class="course__name__title">Data with Paython</span>
+                                                    <span class="course__name__count">8 course</span>
+                                                </div>
+                                            </td>
+                                            <td>May 18</td>
+                                            <td>4.4</td>
+                                            <td>Elementray</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="flex-inline flex-direction-row justify-content-start gap-1 course__name">
+                                                <i class="ri-html5-line"></i>
+                                                <div class="flex-inline flex-direction-column">
+                                                    <span class="course__name__title">HTML Basic</span>
+                                                    <span class="course__name__count">8 course</span>
+                                                </div>
+                                            </td>
+                                            <td>May 18</td>
+                                            <td>4.4</td>
+                                            <td>Elementray</td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                class="flex-inline flex-direction-row justify-content-start gap-1 course__name">
+                                                <i class="fa-brands fa-js"></i>
+                                                <div class="flex-inline flex-direction-column">
+                                                    <span class="course__name__title">JavaScript</span>
+                                                    <span class="course__name__count">8 course</span>
+                                                </div>
+                                            </td>
+                                            <td>May 18</td>
+                                            <td>4.4</td>
+                                            <td>Elementray</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Course" class="tabcontent">
+                        2
+                    </div>
+
+                    <div id="Chat" class="tabcontent">
+                        3
+                    </div>
+                    <div id="Grade" class="tabcontent">
+                        4
+                    </div>
+                    <div id="schedule" class="tabcontent">
+                        5
+                    </div>
+                    <div id="Setting" class="tabcontent">
+                        6
+                    </div>
+                </div>
+                <div class="main__dashboard__profile">
+                    <div
+                        class="main__dashboard__profile__heading flex flex-direction-row justify-content-space-between">
+                        <h3 class="heading" style="margin-bottom:0">Profile</h3>
+                        <i class="ri-edit-2-line"></i>
+                    </div>
+                    <div
+                        class="main__dashboard__profile__avatar flex flex-direction-column justify-content-space-around align-items-flex-centr">
+                        <img src="./images/avatar/man (1).png" alt="man">
+                        <div class="main__dashboard__profile__avatar__tilte">
+                            <span>Ether Howard</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <span class="main__dashboard__profile__avatar__level">Elementray</span>
+                    </div>
+                    <div class="main__dashboard__profile__calender">
+                        <section>
+                            <div class="box">
+                                <div class="container">
+                                    <div id="calendar">
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="main__dashboard__profile__progress">
+                        <h3 class="heading">Homework Progress</h3>
+                        <div
+                            class="main__dashboard__profile__progress__items flex flex-direction-row justify-content-space-between width-100 gap-1">
+                            <div class="main__dashboard__profile__progress__item width-100">
+                                <span class="progress__precent">50%</span>
+                                <span class="progress__title flex-inline flex-direction-column">
+                                    <p class="progress__title__course">Styling with CSS</p>
+                                    <p class="progress__title__count">12 course</p>
+                                </span>
+                                <i class="ri-arrow-right-s-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script/vertical-tab.js"></script>
+    <script src="./script/calender.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#calendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show'
+
+        })
+    </script>
+    <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>

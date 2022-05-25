@@ -1,0 +1,190 @@
+@import "./buttons";
+@import "./colors";
+@import "./reset";
+@import "./utility";
+
+.dashboard__header {
+  margin-bottom: 2rem;
+}
+.dashboard__header h2 {
+  font-size: 4rem;
+}
+.dashboard__search__input {
+  color: #7a7a7a;
+  font-size: 1.3rem;
+  background-color: #fff;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 0 4rem 0.4rem $secondary-color;
+  border-radius: $border-radius-xs;
+  opacity: 0.5;
+}
+.dashboard__search__input i {
+  font-weight: 900;
+}
+.dashboard__search__input input::placeholder {
+  font-weight: 500;
+  color: $gray-color;
+  font-size: 1.2rem;
+}
+.dashboard__bell {
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 0 4rem 0.4rem $secondary-color;
+  border-radius: $border-radius-xs;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.dashboard__bell:hover {
+  background-color: $secondary-color;
+}
+.dashboard__bell:hover i {
+  color: $primary-color;
+}
+.dashboard__bell i {
+  font-weight: 900;
+  color: $gray-color;
+}
+.dashboard__courses__cards {
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.card {
+  background-color: $secondary-color;
+  padding: 2rem;
+  border-radius: $border-radius-xs;
+  overflow: visible;
+}
+.card .card__img__header {
+  background-color: $primary-color;
+  padding: 2rem;
+  width: 100%;
+  border-radius: $border-radius-xs;
+}
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.card__body p {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.card__body span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: $gray-color;
+}
+.card__footer {
+  margin-top: 3rem;
+}
+.card__footer__avatar {
+  position: relative;
+  width: fit-content;
+}
+.card__footer__avatar img {
+  width: 3rem;
+  margin-left: -1rem;
+  transition: $transition;
+}
+.card__footer__avatar img:hover {
+  transform: scale(1.1);
+}
+.card__footer__btn {
+  padding: 0.5rem;
+  background-color: $primary-color;
+  border-radius: $border-radius-xs;
+}
+.card__footer__btn i {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: $white;
+  transition: $transition;
+  cursor: pointer;
+}
+.card__footer__btn:hover {
+  opacity: 0.7;
+}
+.dashboard__mycourses {
+  margin-top: 2rem;
+}
+.dashboard__mycourses span {
+  font-size: 1.3rem;
+  color: $primary-color;
+  cursor: pointer;
+}
+.dashboard__mycourses table th {
+  text-align: start;
+  color: $gray-color;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.dashboard__mycourses table tr {
+  margin: 1rem 0;
+  width: 100%;
+  color: $dark-color;
+}
+.course__name {
+  margin-top: 1rem;
+}
+.course__name i {
+  display: inline-block;
+  padding: 1rem;
+  color: $primary-color;
+  background-color: $secondary-color;
+  font-size: 1.7rem;
+  border-radius: $border-radius-xs;
+}
+.course__name .course__name__title {
+  color: $dark-color;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.course__name .course__name__count {
+  color: $gray-color;
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.main__dashboard__profile__heading i {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: $border-radius-xs;
+  box-shadow: 0 0 4rem 0.4rem $secondary-color;
+  color: $gray-color;
+}
+.main__dashboard__profile__avatar img {
+  width: 10rem;
+}
+.main__dashboard__profile__avatar__tilte span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.main__dashboard__profile__avatar__tilte i {
+  color: $primary-color;
+  margin-left: 1rem;
+}
+.main__dashboard__profile__avatar__level {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $gray-color;
+  opacity: 0.7;
+}
+.main__dashboard__profile__progress__item{
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 4rem 0.4rem $secondary-color;
+  border-radius: $border-radius-xs;
+  color: $gray-color;
+  transition: $transition;
+}
+.main__dashboard__profile__progress__item:hover{
+  background-color: $primary-color;
+  color: $white;
+}
