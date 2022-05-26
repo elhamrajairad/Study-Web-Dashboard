@@ -103,6 +103,9 @@ div:nth-child(2)
   margin-bottom: 2rem;
   font-weight: 500;
 }
+.card {
+  cursor: pointer;
+}
 .card__body p {
   font-weight: 600;
   font-size: 2rem;
