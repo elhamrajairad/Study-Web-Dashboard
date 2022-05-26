@@ -144,34 +144,71 @@ div:nth-child(2)
   opacity: 0.7;
 }
 .dashboard__mycourses {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .dashboard__mycourses span {
   font-size: 1.3rem;
   color: $primary-color;
   cursor: pointer;
 }
-.dashboard__mycourses table th {
-  text-align: start;
-  color: $gray-color;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.dashboard__mycourses table tr {
-  margin: 1rem 0;
-  width: 100%;
-  color: $dark-color;
+.dashboard__mycourses table {
+  th {
+    text-align: start;
+    color: $gray-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  tr {
+    margin: 1rem 0;
+    width: 100%;
+    color: $dark-color;
+  }
+  td {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.8;
+  }
 }
 .course__name {
   margin-top: 1rem;
 }
+.course__name__icon {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.course__name .icon_design {
+  @include opacityColor(#8a70d6);
+}
+.course__name .icon_design i {
+  color: #8a70d6;
+}
+.course__name .icon_development {
+  @include opacityColor(#579be4);
+}
+.course__name .icon_development i {
+  color: #579be4;
+}
+.course__name .icon_python {
+  @include opacityColor(#8a70d6);
+}
+.course__name .icon_html {
+  @include opacityColor(#8a70d6);
+}
+.course__name .icon_javascript {
+  @include opacityColor(#fcab5e);
+}
+.course__name .icon_javascript i {
+  color: #fcab5e;
+}
 .course__name i {
-  display: inline-block;
-  padding: 1rem;
-  color: $primary-color;
-  background-color: $secondary-color;
-  font-size: 1.7rem;
-  border-radius: $border-radius-xs;
+  font-size: 1.8rem;
+  font-weight: 100;
 }
 .course__name .course__name__title {
   color: $dark-color;
@@ -231,6 +268,11 @@ div:nth-child(2)
 p.progress__title__course {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: $dark-color;
+}
+.circle-chart__percent {
+  font-weight: 600;
 }
 p.progress__title__count {
   font-size: 1.2rem;
