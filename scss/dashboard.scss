@@ -59,6 +59,10 @@
   padding: 2rem;
   border-radius: $border-radius-xs;
   overflow: visible;
+  transition: $transition;
+}
+.card:hover {
+  transform: translateY(-1rem);
 }
 .card .card__img__header {
   padding: 2rem 4rem;
@@ -165,12 +169,16 @@ div:nth-child(2)
     margin: 1rem 0;
     width: 100%;
     color: $dark-color;
+    transition: $transition;
   }
   td {
     font-size: 1.3rem;
     font-weight: 600;
     opacity: 0.8;
   }
+}
+tbody tr:hover{
+  transform: translateX(0.5rem)
 }
 .course__name {
   margin-top: 1rem;
