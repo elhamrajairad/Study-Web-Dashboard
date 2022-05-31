@@ -262,9 +262,9 @@ div:nth-child(2)
   transition: $transition;
   cursor: pointer;
 }
-.main__dashboard__profile__progress__item:hover {
-  background-color: $secondary-color;
-}
+// .main__dashboard__profile__progress__item:hover {
+//   background-color: $secondary-color;
+// }
 .progress__title {
   width: 80%;
 }
@@ -290,4 +290,10 @@ i.ri-arrow-right-s-line {
   float: left;
   padding: 0;
   padding-right: 1rem;
+}
+.backgorund--fill {
+  background-color: rgba($color: $primary-color, $alpha: 0.5);
+}
+.backgorund--withe {
+  background-color: $white;
 }

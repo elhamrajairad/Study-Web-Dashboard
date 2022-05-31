@@ -1,12 +1,16 @@
-let parent = document.querySelector(
-  ".main__dashboard__profile__progress__items"
+let cards = document.querySelectorAll(
+  ".main__dashboard__profile__progress__item"
 );
-parent.addEventListener("click", setBackGround, false);
-
-function setBackGround(e) {
-  if (e.target.matches(".main__dashboard__profile__progress__item")) {
-    e.target.matches(
-      ".main__dashboard__profile__progress__item"
-    ).style.backgroundColor = "red";
-  }
-}
+cards.forEach((item) => {
+  item.addEventListener("click", function () {
+    if (item.classList.contains("backgorund--withe")) {
+      item.classList.replace("backgorund--withe", "backgorund--fill");
+      if (document.querySelectorAll(".backgorund--fill").length > 1) {
+        let backgorundWhite = document.querySelectorAll(".backgorund--fill");
+        backgorundWhite.forEach((item) => {
+          item.classList.replace("backgorund--fill", "backgorund--withe");
+        });
+      }
+    }
+  });
+});
